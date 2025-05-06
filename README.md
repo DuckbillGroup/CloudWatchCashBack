@@ -20,7 +20,7 @@ A tool to calculate potential savings from AWS Lambda's new CloudWatch Logs tier
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/CloudWatchCashBack.git
+git clone https://github.com/DuckbillGroup/CloudWatchCashBack
 cd CloudWatchCashBack
 ```
 
