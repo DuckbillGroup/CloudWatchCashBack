@@ -1,0 +1,2882 @@
+{
+  "af-south-1": {
+    "logs": {
+      "standard_ingestion": 0.678,
+      "infrequent_ingestion": 0.339,
+      "storage": 0.036,
+      "analyze_log_insights_per_gb_scanned": 0.0068,
+      "detect_and_mask_per_gb_scanned": 0.12,
+      "analyze_live_tail_per_min": 0.01,
+      "vended_logs": {
+        "to_cloudwatch_logs_standard": {
+          "first_10tb": 0.678,
+          "next_20tb": 0.339,
+          "next_20tb_plus": 0.136,
+          "over_50tb": 0.068,
+          "data_stored": 0.036
+        },
+        "to_cloudwatch_logs_infrequent": {
+          "first_10tb": 0.339,
+          "next_20tb": 0.204,
+          "next_20tb_plus": 0.102,
+          "over_50tb": 0.068,
+          "data_stored": 0.036
+        },
+        "to_s3": {
+          "first_10tb": 0.339,
+          "next_20tb": 0.204,
+          "next_20tb_plus": 0.102,
+          "over_50tb": 0.068,
+          "convert_to_parquet_per_gb": 0.044
+        },
+        "to_kinesis": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05
+        }
+      }
+    },
+    "metrics": {
+      "metrics": {
+        "first_10k": 0.3,
+        "next_240k": 0.1,
+        "next_750k": 0.05,
+        "over_1m": 0.02
+      },
+      "api_per_request": {
+        "GetMetricData": 0.01,
+        "GetInsightRuleReport": 0.01,
+        "GetMetricWidgetImage": 0.02,
+        "GetMetricStatistics": 0.01,
+        "ListMetrics": 0.01,
+        "PutMetricData": 0.01,
+        "GetDashboard": 0.01,
+        "ListDashboards": 0.01,
+        "PutDashboard": 0.01,
+        "DeleteDashboards": 0.01
+      },
+      "streams": {
+        "per_1000_metric_udpates": 0.003
+      }
+    },
+    "xray": {
+      "traces_recorded": 5.0,
+      "traces_received": 0.5,
+      "traces_scanned": 0.5,
+      "insights_per_traces": 1.0
+    },
+    "dashboards": {
+      "per_dashboard_per_month": 3.0
+    },
+    "alarms": {
+      "standard_alarm_metric": 0.1,
+      "standard_alarm_insights": 0.1,
+      "high_res_alarm_metric": 0.3,
+      "aggregated_alarm_metric": 0.5
+    },
+    "contributor_insights": {
+      "cwlogs": {
+        "insights_rule": 0.5,
+        "matched_log_events": 0.027
+      },
+      "dynamodb": {
+        "insights_rule": 0.5,
+        "dynamodb_events": 0.041
+      },
+      "privatelink": {
+        "insights_rule": 9.0
+      }
+    }
+  },
+  "ap-east-1": {
+    "logs": {
+      "standard_ingestion": 0.8,
+      "infrequent_ingestion": 0.4,
+      "storage": 0.03,
+      "analyze_log_insights_per_gb_scanned": 0.008,
+      "detect_and_mask_per_gb_scanned": 0.12,
+      "analyze_live_tail_per_min": 0.01,
+      "vended_logs": {
+        "to_cloudwatch_logs_standard": {
+          "first_10tb": 0.8,
+          "next_20tb": 0.39,
+          "next_20tb_plus": 0.15,
+          "over_50tb": 0.08,
+          "data_stored": 0.03
+        },
+        "to_cloudwatch_logs_infrequent": {
+          "first_10tb": 0.39,
+          "next_20tb": 0.23,
+          "next_20tb_plus": 0.116,
+          "over_50tb": 0.08,
+          "data_stored": 0.03
+        },
+        "to_s3": {
+          "first_10tb": 0.39,
+          "next_20tb": 0.23,
+          "next_20tb_plus": 0.116,
+          "over_50tb": 0.08,
+          "convert_to_parquet_per_gb": 0.047
+        },
+        "to_kinesis": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05
+        }
+      }
+    },
+    "metrics": {
+      "metrics": {
+        "first_10k": 0.3,
+        "next_240k": 0.1,
+        "next_750k": 0.05,
+        "over_1m": 0.02
+      },
+      "api_per_request": {
+        "GetMetricData": 0.01,
+        "GetInsightRuleReport": 0.01,
+        "GetMetricWidgetImage": 0.02,
+        "GetMetricStatistics": 0.01,
+        "ListMetrics": 0.01,
+        "PutMetricData": 0.01,
+        "GetDashboard": 0.01,
+        "ListDashboards": 0.01,
+        "PutDashboard": 0.01,
+        "DeleteDashboards": 0.01
+      },
+      "streams": {
+        "per_1000_metric_udpates": 0.003
+      }
+    },
+    "xray": {
+      "traces_recorded": 5.0,
+      "traces_received": 0.5,
+      "traces_scanned": 0.5,
+      "insights_per_traces": 1.0
+    },
+    "dashboards": {
+      "per_dashboard_per_month": 3.0
+    },
+    "alarms": {
+      "standard_alarm_metric": 0.1,
+      "standard_alarm_insights": 0.1,
+      "high_res_alarm_metric": 0.3,
+      "aggregated_alarm_metric": 0.5
+    },
+    "contributor_insights": {
+      "cwlogs": {
+        "insights_rule": 0.5,
+        "matched_log_events": 0.032
+      },
+      "dynamodb": {
+        "insights_rule": 0.5,
+        "dynamodb_events": 0.038
+      },
+      "privatelink": {
+        "insights_rule": 9.0
+      }
+    }
+  },
+  "ap-northeast-1": {
+    "logs": {
+      "standard_ingestion": 0.76,
+      "infrequent_ingestion": 0.38,
+      "storage": 0.033,
+      "analyze_log_insights_per_gb_scanned": 0.0076,
+      "detect_and_mask_per_gb_scanned": 0.12,
+      "analyze_live_tail_per_min": 0.01,
+      "vended_logs": {
+        "to_cloudwatch_logs_standard": {
+          "first_10tb": 0.76,
+          "next_20tb": 0.38,
+          "next_20tb_plus": 0.152,
+          "over_50tb": 0.076,
+          "data_stored": 0.033
+        },
+        "to_cloudwatch_logs_infrequent": {
+          "first_10tb": 0.38,
+          "next_20tb": 0.228,
+          "next_20tb_plus": 0.114,
+          "over_50tb": 0.076,
+          "data_stored": 0.033
+        },
+        "to_s3": {
+          "first_10tb": 0.38,
+          "next_20tb": 0.228,
+          "next_20tb_plus": 0.114,
+          "over_50tb": 0.076,
+          "convert_to_parquet_per_gb": 0.056
+        },
+        "to_kinesis": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05
+        }
+      }
+    },
+    "metrics": {
+      "metrics": {
+        "first_10k": 0.3,
+        "next_240k": 0.1,
+        "next_750k": 0.05,
+        "over_1m": 0.02
+      },
+      "api_per_request": {
+        "GetMetricData": 0.01,
+        "GetInsightRuleReport": 0.01,
+        "GetMetricWidgetImage": 0.02,
+        "GetMetricStatistics": 0.01,
+        "ListMetrics": 0.01,
+        "PutMetricData": 0.01,
+        "GetDashboard": 0.01,
+        "ListDashboards": 0.01,
+        "PutDashboard": 0.01,
+        "DeleteDashboards": 0.01
+      },
+      "streams": {
+        "per_1000_metric_udpates": 0.003
+      }
+    },
+    "xray": {
+      "traces_recorded": 5.0,
+      "traces_received": 0.5,
+      "traces_scanned": 0.5,
+      "insights_per_traces": 1.0
+    },
+    "dashboards": {
+      "per_dashboard_per_month": 3.0
+    },
+    "alarms": {
+      "standard_alarm_metric": 0.1,
+      "standard_alarm_insights": 0.1,
+      "high_res_alarm_metric": 0.3,
+      "aggregated_alarm_metric": 0.5
+    },
+    "contributor_insights": {
+      "cwlogs": {
+        "insights_rule": 0.5,
+        "matched_log_events": 0.03
+      },
+      "dynamodb": {
+        "insights_rule": 0.5,
+        "dynamodb_events": 0.034
+      },
+      "privatelink": {
+        "insights_rule": 9.0
+      }
+    }
+  },
+  "ap-northeast-2": {
+    "logs": {
+      "standard_ingestion": 0.76,
+      "infrequent_ingestion": 0.38,
+      "storage": 0.0314,
+      "analyze_log_insights_per_gb_scanned": 0.0076,
+      "detect_and_mask_per_gb_scanned": 0.12,
+      "analyze_live_tail_per_min": 0.01,
+      "vended_logs": {
+        "to_cloudwatch_logs_standard": {
+          "first_10tb": 0.76,
+          "next_20tb": 0.38,
+          "next_20tb_plus": 0.152,
+          "over_50tb": 0.076,
+          "data_stored": 0.0314
+        },
+        "to_cloudwatch_logs_infrequent": {
+          "first_10tb": 0.38,
+          "next_20tb": 0.228,
+          "next_20tb_plus": 0.114,
+          "over_50tb": 0.076,
+          "data_stored": 0.0314
+        },
+        "to_s3": {
+          "first_10tb": 0.38,
+          "next_20tb": 0.228,
+          "next_20tb_plus": 0.114,
+          "over_50tb": 0.076,
+          "convert_to_parquet_per_gb": 0.046
+        },
+        "to_kinesis": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05
+        }
+      }
+    },
+    "metrics": {
+      "metrics": {
+        "first_10k": 0.3,
+        "next_240k": 0.1,
+        "next_750k": 0.05,
+        "over_1m": 0.02
+      },
+      "api_per_request": {
+        "GetMetricData": 0.01,
+        "GetInsightRuleReport": 0.01,
+        "GetMetricWidgetImage": 0.02,
+        "GetMetricStatistics": 0.01,
+        "ListMetrics": 0.01,
+        "PutMetricData": 0.01,
+        "GetDashboard": 0.01,
+        "ListDashboards": 0.01,
+        "PutDashboard": 0.01,
+        "DeleteDashboards": 0.01
+      },
+      "streams": {
+        "per_1000_metric_udpates": 0.003
+      }
+    },
+    "xray": {
+      "traces_recorded": 5.0,
+      "traces_received": 0.5,
+      "traces_scanned": 0.5,
+      "insights_per_traces": 1.0
+    },
+    "dashboards": {
+      "per_dashboard_per_month": 3.0
+    },
+    "alarms": {
+      "standard_alarm_metric": 0.1,
+      "standard_alarm_insights": 0.1,
+      "high_res_alarm_metric": 0.3,
+      "aggregated_alarm_metric": 0.5
+    },
+    "contributor_insights": {
+      "cwlogs": {
+        "insights_rule": 0.5,
+        "matched_log_events": 0.03
+      },
+      "dynamodb": {
+        "insights_rule": 0.5,
+        "dynamodb_events": 0.033
+      },
+      "privatelink": {
+        "insights_rule": 9.0
+      }
+    }
+  },
+  "ap-northeast-3": {
+    "logs": {
+      "standard_ingestion": 0.76,
+      "infrequent_ingestion": 0.38,
+      "storage": 0.033,
+      "analyze_log_insights_per_gb_scanned": 0.0076,
+      "detect_and_mask_per_gb_scanned": 0.12,
+      "analyze_live_tail_per_min": 0.01,
+      "vended_logs": {
+        "to_cloudwatch_logs_standard": {
+          "first_10tb": 0.76,
+          "next_20tb": 0.38,
+          "next_20tb_plus": 0.152,
+          "over_50tb": 0.076,
+          "data_stored": 0.033
+        },
+        "to_cloudwatch_logs_infrequent": {
+          "first_10tb": 0.38,
+          "next_20tb": 0.228,
+          "next_20tb_plus": 0.114,
+          "over_50tb": 0.076,
+          "data_stored": 0.033
+        },
+        "to_s3": {
+          "first_10tb": 0.38,
+          "next_20tb": 0.228,
+          "next_20tb_plus": 0.114,
+          "over_50tb": 0.076,
+          "convert_to_parquet_per_gb": 0.056
+        },
+        "to_kinesis": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05
+        }
+      }
+    },
+    "metrics": {
+      "metrics": {
+        "first_10k": 0.3,
+        "next_240k": 0.1,
+        "next_750k": 0.05,
+        "over_1m": 0.02
+      },
+      "api_per_request": {
+        "GetMetricData": 0.01,
+        "GetInsightRuleReport": 0.01,
+        "GetMetricWidgetImage": 0.02,
+        "GetMetricStatistics": 0.01,
+        "ListMetrics": 0.01,
+        "PutMetricData": 0.01,
+        "GetDashboard": 0.01,
+        "ListDashboards": 0.01,
+        "PutDashboard": 0.01,
+        "DeleteDashboards": 0.01
+      },
+      "streams": {
+        "per_1000_metric_udpates": 0.003
+      }
+    },
+    "xray": {
+      "traces_recorded": 5.0,
+      "traces_received": 0.5,
+      "traces_scanned": 0.5,
+      "insights_per_traces": 1.0
+    },
+    "dashboards": {
+      "per_dashboard_per_month": 3.0
+    },
+    "alarms": {
+      "standard_alarm_metric": 0.1,
+      "standard_alarm_insights": 0.1,
+      "high_res_alarm_metric": 0.3,
+      "aggregated_alarm_metric": 0.5
+    },
+    "contributor_insights": {
+      "cwlogs": {
+        "insights_rule": 0.5,
+        "matched_log_events": 0.03
+      },
+      "dynamodb": {
+        "insights_rule": 0.5,
+        "dynamodb_events": 0.034
+      },
+      "privatelink": {
+        "insights_rule": 9.0
+      }
+    }
+  },
+  "ap-south-1": {
+    "logs": {
+      "standard_ingestion": 0.67,
+      "infrequent_ingestion": 0.335,
+      "storage": 0.03,
+      "analyze_log_insights_per_gb_scanned": 0.0067,
+      "detect_and_mask_per_gb_scanned": 0.12,
+      "analyze_live_tail_per_min": 0.01,
+      "vended_logs": {
+        "to_cloudwatch_logs_standard": {
+          "first_10tb": 0.67,
+          "next_20tb": 0.335,
+          "next_20tb_plus": 0.134,
+          "over_50tb": 0.067,
+          "data_stored": 0.03
+        },
+        "to_cloudwatch_logs_infrequent": {
+          "first_10tb": 0.335,
+          "next_20tb": 0.201,
+          "next_20tb_plus": 0.101,
+          "over_50tb": 0.067,
+          "data_stored": 0.03
+        },
+        "to_s3": {
+          "first_10tb": 0.335,
+          "next_20tb": 0.201,
+          "next_20tb_plus": 0.101,
+          "over_50tb": 0.067,
+          "convert_to_parquet_per_gb": 0.058
+        },
+        "to_kinesis": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05
+        }
+      }
+    },
+    "metrics": {
+      "metrics": {
+        "first_10k": 0.3,
+        "next_240k": 0.1,
+        "next_750k": 0.05,
+        "over_1m": 0.02
+      },
+      "api_per_request": {
+        "GetMetricData": 0.01,
+        "GetInsightRuleReport": 0.01,
+        "GetMetricWidgetImage": 0.02,
+        "GetMetricStatistics": 0.01,
+        "ListMetrics": 0.01,
+        "PutMetricData": 0.01,
+        "GetDashboard": 0.01,
+        "ListDashboards": 0.01,
+        "PutDashboard": 0.01,
+        "DeleteDashboards": 0.01
+      },
+      "streams": {
+        "per_1000_metric_udpates": 0.003
+      }
+    },
+    "xray": {
+      "traces_recorded": 5.0,
+      "traces_received": 0.5,
+      "traces_scanned": 0.5,
+      "insights_per_traces": 1.0
+    },
+    "dashboards": {
+      "per_dashboard_per_month": 3.0
+    },
+    "alarms": {
+      "standard_alarm_metric": 0.1,
+      "standard_alarm_insights": 0.1,
+      "high_res_alarm_metric": 0.3,
+      "aggregated_alarm_metric": 0.5
+    },
+    "contributor_insights": {
+      "cwlogs": {
+        "insights_rule": 0.5,
+        "matched_log_events": 0.027
+      },
+      "dynamodb": {
+        "insights_rule": 0.5,
+        "dynamodb_events": 0.034
+      },
+      "privatelink": {
+        "insights_rule": 9.0
+      }
+    }
+  },
+  "ap-south-2": {
+    "logs": {
+      "standard_ingestion": 0.67,
+      "infrequent_ingestion": 0.335,
+      "storage": 0.03,
+      "analyze_log_insights_per_gb_scanned": 0.0067,
+      "detect_and_mask_per_gb_scanned": 0.12,
+      "analyze_live_tail_per_min": 0.01,
+      "vended_logs": {
+        "to_cloudwatch_logs_standard": {
+          "first_10tb": 0.67,
+          "next_20tb": 0.335,
+          "next_20tb_plus": 0.134,
+          "over_50tb": 0.067,
+          "data_stored": 0.03
+        },
+        "to_cloudwatch_logs_infrequent": {
+          "first_10tb": 0.335,
+          "next_20tb": 0.201,
+          "next_20tb_plus": 0.101,
+          "over_50tb": 0.067,
+          "data_stored": 0.03
+        },
+        "to_s3": {
+          "first_10tb": 0.335,
+          "next_20tb": 0.201,
+          "next_20tb_plus": 0.101,
+          "over_50tb": 0.067,
+          "convert_to_parquet_per_gb": 0.058
+        },
+        "to_kinesis": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05
+        }
+      }
+    },
+    "metrics": {
+      "metrics": {
+        "first_10k": 0.3,
+        "next_240k": 0.1,
+        "next_750k": 0.05,
+        "over_1m": 0.02
+      },
+      "api_per_request": {
+        "GetMetricData": 0.01,
+        "GetInsightRuleReport": 0.01,
+        "GetMetricWidgetImage": 0.02,
+        "GetMetricStatistics": 0.01,
+        "ListMetrics": 0.01,
+        "PutMetricData": 0.01,
+        "GetDashboard": 0.01,
+        "ListDashboards": 0.01,
+        "PutDashboard": 0.01,
+        "DeleteDashboards": 0.01
+      },
+      "streams": {
+        "per_1000_metric_udpates": 0.003
+      }
+    },
+    "xray": {
+      "traces_recorded": 5.0,
+      "traces_received": 0.5,
+      "traces_scanned": 0.5,
+      "insights_per_traces": 1.0
+    },
+    "dashboards": {
+      "per_dashboard_per_month": 3.0
+    },
+    "alarms": {
+      "standard_alarm_metric": 0.1,
+      "standard_alarm_insights": 0.1,
+      "high_res_alarm_metric": 0.3,
+      "aggregated_alarm_metric": 0.5
+    },
+    "contributor_insights": {
+      "cwlogs": {
+        "insights_rule": 0.5,
+        "matched_log_events": 0.027
+      },
+      "dynamodb": {
+        "insights_rule": 0.5,
+        "dynamodb_events": 0.034
+      },
+      "privatelink": {
+        "insights_rule": 9.0
+      }
+    }
+  },
+  "ap-southeast-1": {
+    "logs": {
+      "standard_ingestion": 0.7,
+      "infrequent_ingestion": 0.35,
+      "storage": 0.03,
+      "analyze_log_insights_per_gb_scanned": 0.007,
+      "detect_and_mask_per_gb_scanned": 0.12,
+      "analyze_live_tail_per_min": 0.01,
+      "vended_logs": {
+        "to_cloudwatch_logs_standard": {
+          "first_10tb": 0.7,
+          "next_20tb": 0.35,
+          "next_20tb_plus": 0.14,
+          "over_50tb": 0.07,
+          "data_stored": 0.03
+        },
+        "to_cloudwatch_logs_infrequent": {
+          "first_10tb": 0.35,
+          "next_20tb": 0.21,
+          "next_20tb_plus": 0.105,
+          "over_50tb": 0.07,
+          "data_stored": 0.03
+        },
+        "to_s3": {
+          "first_10tb": 0.35,
+          "next_20tb": 0.21,
+          "next_20tb_plus": 0.105,
+          "over_50tb": 0.07,
+          "convert_to_parquet_per_gb": 0.049
+        },
+        "to_kinesis": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05
+        }
+      }
+    },
+    "metrics": {
+      "metrics": {
+        "first_10k": 0.3,
+        "next_240k": 0.1,
+        "next_750k": 0.05,
+        "over_1m": 0.02
+      },
+      "api_per_request": {
+        "GetMetricData": 0.01,
+        "GetInsightRuleReport": 0.01,
+        "GetMetricWidgetImage": 0.02,
+        "GetMetricStatistics": 0.01,
+        "ListMetrics": 0.01,
+        "PutMetricData": 0.01,
+        "GetDashboard": 0.01,
+        "ListDashboards": 0.01,
+        "PutDashboard": 0.01,
+        "DeleteDashboards": 0.01
+      },
+      "streams": {
+        "per_1000_metric_udpates": 0.003
+      }
+    },
+    "xray": {
+      "traces_recorded": 5.0,
+      "traces_received": 0.5,
+      "traces_scanned": 0.5,
+      "insights_per_traces": 1.0
+    },
+    "dashboards": {
+      "per_dashboard_per_month": 3.0
+    },
+    "alarms": {
+      "standard_alarm_metric": 0.1,
+      "standard_alarm_insights": 0.1,
+      "high_res_alarm_metric": 0.3,
+      "aggregated_alarm_metric": 0.5
+    },
+    "contributor_insights": {
+      "cwlogs": {
+        "insights_rule": 0.5,
+        "matched_log_events": 0.028
+      },
+      "dynamodb": {
+        "insights_rule": 0.5,
+        "dynamodb_events": 0.034
+      },
+      "privatelink": {
+        "insights_rule": 9.0
+      }
+    }
+  },
+  "ap-southeast-2": {
+    "logs": {
+      "standard_ingestion": 0.67,
+      "infrequent_ingestion": 0.335,
+      "storage": 0.033,
+      "analyze_log_insights_per_gb_scanned": 0.0067,
+      "detect_and_mask_per_gb_scanned": 0.12,
+      "analyze_live_tail_per_min": 0.01,
+      "vended_logs": {
+        "to_cloudwatch_logs_standard": {
+          "first_10tb": 0.67,
+          "next_20tb": 0.335,
+          "next_20tb_plus": 0.134,
+          "over_50tb": 0.067,
+          "data_stored": 0.033
+        },
+        "to_cloudwatch_logs_infrequent": {
+          "first_10tb": 0.335,
+          "next_20tb": 0.201,
+          "next_20tb_plus": 0.101,
+          "over_50tb": 0.067,
+          "data_stored": 0.033
+        },
+        "to_s3": {
+          "first_10tb": 0.335,
+          "next_20tb": 0.201,
+          "next_20tb_plus": 0.101,
+          "over_50tb": 0.067,
+          "convert_to_parquet_per_gb": 0.047
+        },
+        "to_kinesis": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05
+        }
+      }
+    },
+    "metrics": {
+      "metrics": {
+        "first_10k": 0.0,
+        "next_240k": 0.0,
+        "next_750k": 0.0,
+        "over_1m": 0.0
+      },
+      "api_per_request": {
+        "GetMetricData": 0.01,
+        "GetInsightRuleReport": 0.01,
+        "GetMetricWidgetImage": 0.02,
+        "GetMetricStatistics": 0.01,
+        "ListMetrics": 0.01,
+        "PutMetricData": 0.01,
+        "GetDashboard": 0.01,
+        "ListDashboards": 0.01,
+        "PutDashboard": 0.01,
+        "DeleteDashboards": 0.01
+      },
+      "streams": {
+        "per_1000_metric_udpates": 0.003
+      }
+    },
+    "xray": {
+      "traces_recorded": 5.0,
+      "traces_received": 0.5,
+      "traces_scanned": 0.5,
+      "insights_per_traces": 1.0
+    },
+    "dashboards": {
+      "per_dashboard_per_month": 3.0
+    },
+    "alarms": {
+      "standard_alarm_metric": 0.1,
+      "standard_alarm_insights": 0.1,
+      "high_res_alarm_metric": 0.3,
+      "aggregated_alarm_metric": 0.5
+    },
+    "contributor_insights": {
+      "cwlogs": {
+        "insights_rule": 0.5,
+        "matched_log_events": 0.027
+      },
+      "dynamodb": {
+        "insights_rule": 0.5,
+        "dynamodb_events": 0.034
+      },
+      "privatelink": {
+        "insights_rule": 9.0
+      }
+    }
+  },
+  "ap-southeast-3": {
+    "logs": {
+      "standard_ingestion": 0.7,
+      "infrequent_ingestion": 0.35,
+      "storage": 0.03,
+      "analyze_log_insights_per_gb_scanned": 0.007,
+      "detect_and_mask_per_gb_scanned": 0.12,
+      "analyze_live_tail_per_min": 0.01,
+      "vended_logs": {
+        "to_cloudwatch_logs_standard": {
+          "first_10tb": 0.7,
+          "next_20tb": 0.35,
+          "next_20tb_plus": 0.14,
+          "over_50tb": 0.07,
+          "data_stored": 0.03
+        },
+        "to_cloudwatch_logs_infrequent": {
+          "first_10tb": 0.35,
+          "next_20tb": 0.21,
+          "next_20tb_plus": 0.105,
+          "over_50tb": 0.07,
+          "data_stored": 0.03
+        },
+        "to_s3": {
+          "first_10tb": 0.35,
+          "next_20tb": 0.21,
+          "next_20tb_plus": 0.105,
+          "over_50tb": 0.07,
+          "convert_to_parquet_per_gb": 0.049
+        },
+        "to_kinesis": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05
+        }
+      }
+    },
+    "metrics": {
+      "metrics": {
+        "first_10k": 0.3,
+        "next_240k": 0.1,
+        "next_750k": 0.05,
+        "over_1m": 0.02
+      },
+      "api_per_request": {
+        "GetMetricData": 0.01,
+        "GetInsightRuleReport": 0.01,
+        "GetMetricWidgetImage": 0.02,
+        "GetMetricStatistics": 0.01,
+        "ListMetrics": 0.01,
+        "PutMetricData": 0.01,
+        "GetDashboard": 0.01,
+        "ListDashboards": 0.01,
+        "PutDashboard": 0.01,
+        "DeleteDashboards": 0.01
+      },
+      "streams": {
+        "per_1000_metric_udpates": 0.003
+      }
+    },
+    "xray": {
+      "traces_recorded": 5.0,
+      "traces_received": 0.5,
+      "traces_scanned": 0.5,
+      "insights_per_traces": 1.0
+    },
+    "dashboards": {
+      "per_dashboard_per_month": 3.0
+    },
+    "alarms": {
+      "standard_alarm_metric": 0.1,
+      "standard_alarm_insights": 0.1,
+      "high_res_alarm_metric": 0.3,
+      "aggregated_alarm_metric": 0.5
+    },
+    "contributor_insights": {
+      "cwlogs": {
+        "insights_rule": 0.5,
+        "matched_log_events": 0.028
+      },
+      "dynamodb": {
+        "insights_rule": 0.5,
+        "dynamodb_events": 0.034
+      },
+      "privatelink": {
+        "insights_rule": 9.0
+      }
+    }
+  },
+  "ap-southeast-4": {
+    "logs": {
+      "standard_ingestion": 0.67,
+      "infrequent_ingestion": 0.335,
+      "storage": 0.033,
+      "analyze_log_insights_per_gb_scanned": 0.0067,
+      "detect_and_mask_per_gb_scanned": 0.12,
+      "analyze_live_tail_per_min": 0.01,
+      "vended_logs": {
+        "to_cloudwatch_logs_standard": {
+          "first_10tb": 0.67,
+          "next_20tb": 0.335,
+          "next_20tb_plus": 0.134,
+          "over_50tb": 0.067,
+          "data_stored": 0.033
+        },
+        "to_cloudwatch_logs_infrequent": {
+          "first_10tb": 0.335,
+          "next_20tb": 0.201,
+          "next_20tb_plus": 0.101,
+          "over_50tb": 0.067,
+          "data_stored": 0.033
+        },
+        "to_s3": {
+          "first_10tb": 0.335,
+          "next_20tb": 0.201,
+          "next_20tb_plus": 0.101,
+          "over_50tb": 0.067,
+          "convert_to_parquet_per_gb": 0.047
+        },
+        "to_kinesis": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05
+        }
+      }
+    },
+    "metrics": {
+      "metrics": {
+        "first_10k": 0.3,
+        "next_240k": 0.1,
+        "next_750k": 0.05,
+        "over_1m": 0.02
+      },
+      "api_per_request": {
+        "GetMetricData": 0.01,
+        "GetInsightRuleReport": 0.01,
+        "GetMetricWidgetImage": 0.02,
+        "GetMetricStatistics": 0.01,
+        "ListMetrics": 0.01,
+        "PutMetricData": 0.01,
+        "GetDashboard": 0.01,
+        "ListDashboards": 0.01,
+        "PutDashboard": 0.01,
+        "DeleteDashboards": 0.01
+      },
+      "streams": {
+        "per_1000_metric_udpates": 0.003
+      }
+    },
+    "xray": {
+      "traces_recorded": 5.0,
+      "traces_received": 0.5,
+      "traces_scanned": 0.5,
+      "insights_per_traces": 1.0
+    },
+    "dashboards": {
+      "per_dashboard_per_month": 3.0
+    },
+    "alarms": {
+      "standard_alarm_metric": 0.1,
+      "standard_alarm_insights": 0.1,
+      "high_res_alarm_metric": 0.3,
+      "aggregated_alarm_metric": 0.5
+    },
+    "contributor_insights": {
+      "cwlogs": {
+        "insights_rule": 0.5,
+        "matched_log_events": 0.027
+      },
+      "dynamodb": {
+        "insights_rule": 0.5,
+        "dynamodb_events": 0.034
+      },
+      "privatelink": {
+        "insights_rule": 9.0
+      }
+    }
+  },
+  "ap-southeast-5": {
+    "logs": {
+      "standard_ingestion": 0.5,
+      "infrequent_ingestion": 0.25,
+      "storage": 0.03,
+      "analyze_log_insights_per_gb_scanned": 0.005,
+      "detect_and_mask_per_gb_scanned": 0.0,
+      "analyze_live_tail_per_min": 0.01,
+      "vended_logs": {
+        "to_cloudwatch_logs_standard": {
+          "first_10tb": 0.5,
+          "next_20tb": 0.25,
+          "next_20tb_plus": 0.1,
+          "over_50tb": 0.05,
+          "data_stored": 0.03
+        },
+        "to_cloudwatch_logs_infrequent": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05,
+          "data_stored": 0.03
+        },
+        "to_s3": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05,
+          "convert_to_parquet_per_gb": 0.03
+        },
+        "to_kinesis": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05
+        }
+      }
+    },
+    "metrics": {
+      "metrics": {
+        "first_10k": 0.0,
+        "next_240k": 0.0,
+        "next_750k": 0.0,
+        "over_1m": 0.0
+      },
+      "api_per_request": {
+        "GetMetricData": 0.01,
+        "GetInsightRuleReport": 0.01,
+        "GetMetricWidgetImage": 0.02,
+        "GetMetricStatistics": 0.01,
+        "ListMetrics": 0.01,
+        "PutMetricData": 0.01,
+        "GetDashboard": 0.01,
+        "ListDashboards": 0.01,
+        "PutDashboard": 0.01,
+        "DeleteDashboards": 0.01
+      },
+      "streams": {
+        "per_1000_metric_udpates": 0.003
+      }
+    },
+    "xray": {
+      "traces_recorded": 4.25,
+      "traces_received": 0.425,
+      "traces_scanned": 0.425,
+      "insights_per_traces": 0.85
+    },
+    "dashboards": {
+      "per_dashboard_per_month": 3.0
+    },
+    "alarms": {
+      "standard_alarm_metric": 0.1,
+      "standard_alarm_insights": 0.1,
+      "high_res_alarm_metric": 0.3,
+      "aggregated_alarm_metric": 0.5
+    },
+    "contributor_insights": {
+      "cwlogs": {
+        "insights_rule": 0.5,
+        "matched_log_events": 0.0
+      },
+      "dynamodb": {
+        "insights_rule": 0.0,
+        "dynamodb_events": 0.0
+      },
+      "privatelink": {
+        "insights_rule": 0.0
+      }
+    }
+  },
+  "ap-southeast-7": {
+    "logs": {
+      "standard_ingestion": 0.5,
+      "infrequent_ingestion": 0.25,
+      "storage": 0.03,
+      "analyze_log_insights_per_gb_scanned": 0.005,
+      "detect_and_mask_per_gb_scanned": 0.0,
+      "analyze_live_tail_per_min": 0.01,
+      "vended_logs": {
+        "to_cloudwatch_logs_standard": {
+          "first_10tb": 0.5,
+          "next_20tb": 0.25,
+          "next_20tb_plus": 0.1,
+          "over_50tb": 0.05,
+          "data_stored": 0.03
+        },
+        "to_cloudwatch_logs_infrequent": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05,
+          "data_stored": 0.03
+        },
+        "to_s3": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05,
+          "convert_to_parquet_per_gb": 0.03
+        },
+        "to_kinesis": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05
+        }
+      }
+    },
+    "metrics": {
+      "metrics": {
+        "first_10k": 0.3,
+        "next_240k": 0.1,
+        "next_750k": 0.05,
+        "over_1m": 0.02
+      },
+      "api_per_request": {
+        "GetMetricData": 0.01,
+        "GetInsightRuleReport": 0.01,
+        "GetMetricWidgetImage": 0.02,
+        "GetMetricStatistics": 0.01,
+        "ListMetrics": 0.01,
+        "PutMetricData": 0.01,
+        "GetDashboard": 0.01,
+        "ListDashboards": 0.01,
+        "PutDashboard": 0.01,
+        "DeleteDashboards": 0.01
+      },
+      "streams": {
+        "per_1000_metric_udpates": 0.0
+      }
+    },
+    "xray": {
+      "traces_recorded": 4.25,
+      "traces_received": 0.425,
+      "traces_scanned": 0.425,
+      "insights_per_traces": 0.85
+    },
+    "dashboards": {
+      "per_dashboard_per_month": 3.0
+    },
+    "alarms": {
+      "standard_alarm_metric": 0.1,
+      "standard_alarm_insights": 0.1,
+      "high_res_alarm_metric": 0.3,
+      "aggregated_alarm_metric": 0.5
+    },
+    "contributor_insights": {
+      "cwlogs": {
+        "insights_rule": 0.5,
+        "matched_log_events": 0.02
+      },
+      "dynamodb": {
+        "insights_rule": 0.5,
+        "dynamodb_events": 0.0306
+      },
+      "privatelink": {
+        "insights_rule": 0.0
+      }
+    }
+  },
+  "ca-central-1": {
+    "logs": {
+      "standard_ingestion": 0.55,
+      "infrequent_ingestion": 0.275,
+      "storage": 0.033,
+      "analyze_log_insights_per_gb_scanned": 0.0055,
+      "detect_and_mask_per_gb_scanned": 0.12,
+      "analyze_live_tail_per_min": 0.01,
+      "vended_logs": {
+        "to_cloudwatch_logs_standard": {
+          "first_10tb": 0.55,
+          "next_20tb": 0.275,
+          "next_20tb_plus": 0.11,
+          "over_50tb": 0.055,
+          "data_stored": 0.033
+        },
+        "to_cloudwatch_logs_infrequent": {
+          "first_10tb": 0.275,
+          "next_20tb": 0.165,
+          "next_20tb_plus": 0.083,
+          "over_50tb": 0.055,
+          "data_stored": 0.033
+        },
+        "to_s3": {
+          "first_10tb": 0.275,
+          "next_20tb": 0.165,
+          "next_20tb_plus": 0.083,
+          "over_50tb": 0.055,
+          "convert_to_parquet_per_gb": 0.048
+        },
+        "to_kinesis": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05
+        }
+      }
+    },
+    "metrics": {
+      "metrics": {
+        "first_10k": 0.3,
+        "next_240k": 0.1,
+        "next_750k": 0.05,
+        "over_1m": 0.02
+      },
+      "api_per_request": {
+        "GetMetricData": 0.01,
+        "GetInsightRuleReport": 0.01,
+        "GetMetricWidgetImage": 0.02,
+        "GetMetricStatistics": 0.01,
+        "ListMetrics": 0.01,
+        "PutMetricData": 0.01,
+        "GetDashboard": 0.01,
+        "ListDashboards": 0.01,
+        "PutDashboard": 0.01,
+        "DeleteDashboards": 0.01
+      },
+      "streams": {
+        "per_1000_metric_udpates": 0.003
+      }
+    },
+    "xray": {
+      "traces_recorded": 5.0,
+      "traces_received": 0.5,
+      "traces_scanned": 0.5,
+      "insights_per_traces": 1.0
+    },
+    "dashboards": {
+      "per_dashboard_per_month": 3.0
+    },
+    "alarms": {
+      "standard_alarm_metric": 0.1,
+      "standard_alarm_insights": 0.1,
+      "high_res_alarm_metric": 0.3,
+      "aggregated_alarm_metric": 0.5
+    },
+    "contributor_insights": {
+      "cwlogs": {
+        "insights_rule": 0.5,
+        "matched_log_events": 0.022
+      },
+      "dynamodb": {
+        "insights_rule": 0.5,
+        "dynamodb_events": 0.033
+      },
+      "privatelink": {
+        "insights_rule": 9.0
+      }
+    }
+  },
+  "ca-west-1": {
+    "logs": {
+      "standard_ingestion": 0.55,
+      "infrequent_ingestion": 0.275,
+      "storage": 0.033,
+      "analyze_log_insights_per_gb_scanned": 0.0055,
+      "detect_and_mask_per_gb_scanned": 0.0,
+      "analyze_live_tail_per_min": 0.0,
+      "vended_logs": {
+        "to_cloudwatch_logs_standard": {
+          "first_10tb": 0.55,
+          "next_20tb": 0.275,
+          "next_20tb_plus": 0.11,
+          "over_50tb": 0.055,
+          "data_stored": 0.033
+        },
+        "to_cloudwatch_logs_infrequent": {
+          "first_10tb": 0.275,
+          "next_20tb": 0.165,
+          "next_20tb_plus": 0.083,
+          "over_50tb": 0.055,
+          "data_stored": 0.033
+        },
+        "to_s3": {
+          "first_10tb": 0.275,
+          "next_20tb": 0.165,
+          "next_20tb_plus": 0.083,
+          "over_50tb": 0.055,
+          "convert_to_parquet_per_gb": 0.048
+        },
+        "to_kinesis": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05
+        }
+      }
+    },
+    "metrics": {
+      "metrics": {
+        "first_10k": 0.3,
+        "next_240k": 0.1,
+        "next_750k": 0.05,
+        "over_1m": 0.02
+      },
+      "api_per_request": {
+        "GetMetricData": 0.01,
+        "GetInsightRuleReport": 0.01,
+        "GetMetricWidgetImage": 0.02,
+        "GetMetricStatistics": 0.01,
+        "ListMetrics": 0.01,
+        "PutMetricData": 0.01,
+        "GetDashboard": 0.01,
+        "ListDashboards": 0.01,
+        "PutDashboard": 0.01,
+        "DeleteDashboards": 0.01
+      },
+      "streams": {
+        "per_1000_metric_udpates": 0.003
+      }
+    },
+    "xray": {
+      "traces_recorded": 5.0,
+      "traces_received": 0.5,
+      "traces_scanned": 0.5,
+      "insights_per_traces": 1.0
+    },
+    "dashboards": {
+      "per_dashboard_per_month": 3.0
+    },
+    "alarms": {
+      "standard_alarm_metric": 0.1,
+      "standard_alarm_insights": 0.1,
+      "high_res_alarm_metric": 0.3,
+      "aggregated_alarm_metric": 0.5
+    },
+    "contributor_insights": {
+      "cwlogs": {
+        "insights_rule": 0.5,
+        "matched_log_events": 0.022
+      },
+      "dynamodb": {
+        "insights_rule": 0.5,
+        "dynamodb_events": 0.033
+      },
+      "privatelink": {
+        "insights_rule": 9.0
+      }
+    }
+  },
+  "eu-central-1": {
+    "logs": {
+      "standard_ingestion": 0.63,
+      "infrequent_ingestion": 0.315,
+      "storage": 0.0324,
+      "analyze_log_insights_per_gb_scanned": 0.0063,
+      "detect_and_mask_per_gb_scanned": 0.12,
+      "analyze_live_tail_per_min": 0.01,
+      "vended_logs": {
+        "to_cloudwatch_logs_standard": {
+          "first_10tb": 0.63,
+          "next_20tb": 0.315,
+          "next_20tb_plus": 0.126,
+          "over_50tb": 0.063,
+          "data_stored": 0.0324
+        },
+        "to_cloudwatch_logs_infrequent": {
+          "first_10tb": 0.285,
+          "next_20tb": 0.171,
+          "next_20tb_plus": 0.086,
+          "over_50tb": 0.057,
+          "data_stored": 0.0324
+        },
+        "to_s3": {
+          "first_10tb": 0.285,
+          "next_20tb": 0.171,
+          "next_20tb_plus": 0.086,
+          "over_50tb": 0.057,
+          "convert_to_parquet_per_gb": 0.047
+        },
+        "to_kinesis": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05
+        }
+      }
+    },
+    "metrics": {
+      "metrics": {
+        "first_10k": 0.3,
+        "next_240k": 0.1,
+        "next_750k": 0.05,
+        "over_1m": 0.02
+      },
+      "api_per_request": {
+        "GetMetricData": 0.01,
+        "GetInsightRuleReport": 0.01,
+        "GetMetricWidgetImage": 0.02,
+        "GetMetricStatistics": 0.01,
+        "ListMetrics": 0.01,
+        "PutMetricData": 0.01,
+        "GetDashboard": 0.01,
+        "ListDashboards": 0.01,
+        "PutDashboard": 0.01,
+        "DeleteDashboards": 0.01
+      },
+      "streams": {
+        "per_1000_metric_udpates": 0.003
+      }
+    },
+    "xray": {
+      "traces_recorded": 5.0,
+      "traces_received": 0.5,
+      "traces_scanned": 0.5,
+      "insights_per_traces": 1.0
+    },
+    "dashboards": {
+      "per_dashboard_per_month": 3.0
+    },
+    "alarms": {
+      "standard_alarm_metric": 0.1,
+      "standard_alarm_insights": 0.1,
+      "high_res_alarm_metric": 0.3,
+      "aggregated_alarm_metric": 0.5
+    },
+    "contributor_insights": {
+      "cwlogs": {
+        "insights_rule": 0.5,
+        "matched_log_events": 0.025
+      },
+      "dynamodb": {
+        "insights_rule": 0.5,
+        "dynamodb_events": 0.037
+      },
+      "privatelink": {
+        "insights_rule": 9.0
+      }
+    }
+  },
+  "eu-central-2": {
+    "logs": {
+      "standard_ingestion": 0.69,
+      "infrequent_ingestion": 0.345,
+      "storage": 0.0356,
+      "analyze_log_insights_per_gb_scanned": 0.0069,
+      "detect_and_mask_per_gb_scanned": 0.12,
+      "analyze_live_tail_per_min": 0.01,
+      "vended_logs": {
+        "to_cloudwatch_logs_standard": {
+          "first_10tb": 0.69,
+          "next_20tb": 0.347,
+          "next_20tb_plus": 0.139,
+          "over_50tb": 0.069,
+          "data_stored": 0.0356
+        },
+        "to_cloudwatch_logs_infrequent": {
+          "first_10tb": 0.314,
+          "next_20tb": 0.188,
+          "next_20tb_plus": 0.095,
+          "over_50tb": 0.063,
+          "data_stored": 0.0356
+        },
+        "to_s3": {
+          "first_10tb": 0.314,
+          "next_20tb": 0.188,
+          "next_20tb_plus": 0.095,
+          "over_50tb": 0.063,
+          "convert_to_parquet_per_gb": 0.052
+        },
+        "to_kinesis": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05
+        }
+      }
+    },
+    "metrics": {
+      "metrics": {
+        "first_10k": 0.3,
+        "next_240k": 0.1,
+        "next_750k": 0.05,
+        "over_1m": 0.02
+      },
+      "api_per_request": {
+        "GetMetricData": 0.01,
+        "GetInsightRuleReport": 0.01,
+        "GetMetricWidgetImage": 0.02,
+        "GetMetricStatistics": 0.01,
+        "ListMetrics": 0.01,
+        "PutMetricData": 0.01,
+        "GetDashboard": 0.01,
+        "ListDashboards": 0.01,
+        "PutDashboard": 0.01,
+        "DeleteDashboards": 0.01
+      },
+      "streams": {
+        "per_1000_metric_udpates": 0.003
+      }
+    },
+    "xray": {
+      "traces_recorded": 5.0,
+      "traces_received": 0.5,
+      "traces_scanned": 0.5,
+      "insights_per_traces": 1.0
+    },
+    "dashboards": {
+      "per_dashboard_per_month": 3.0
+    },
+    "alarms": {
+      "standard_alarm_metric": 0.1,
+      "standard_alarm_insights": 0.1,
+      "high_res_alarm_metric": 0.3,
+      "aggregated_alarm_metric": 0.5
+    },
+    "contributor_insights": {
+      "cwlogs": {
+        "insights_rule": 0.5,
+        "matched_log_events": 0.028
+      },
+      "dynamodb": {
+        "insights_rule": 0.5,
+        "dynamodb_events": 0.041
+      },
+      "privatelink": {
+        "insights_rule": 9.0
+      }
+    }
+  },
+  "eu-north-1": {
+    "logs": {
+      "standard_ingestion": 0.54,
+      "infrequent_ingestion": 0.27,
+      "storage": 0.028,
+      "analyze_log_insights_per_gb_scanned": 0.0054,
+      "detect_and_mask_per_gb_scanned": 0.12,
+      "analyze_live_tail_per_min": 0.01,
+      "vended_logs": {
+        "to_cloudwatch_logs_standard": {
+          "first_10tb": 0.54,
+          "next_20tb": 0.271,
+          "next_20tb_plus": 0.108,
+          "over_50tb": 0.054,
+          "data_stored": 0.028
+        },
+        "to_cloudwatch_logs_infrequent": {
+          "first_10tb": 0.271,
+          "next_20tb": 0.162,
+          "next_20tb_plus": 0.0817,
+          "over_50tb": 0.054,
+          "data_stored": 0.028
+        },
+        "to_s3": {
+          "first_10tb": 0.271,
+          "next_20tb": 0.162,
+          "next_20tb_plus": 0.0817,
+          "over_50tb": 0.054,
+          "convert_to_parquet_per_gb": 0.04
+        },
+        "to_kinesis": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05
+        }
+      }
+    },
+    "metrics": {
+      "metrics": {
+        "first_10k": 0.3,
+        "next_240k": 0.1,
+        "next_750k": 0.05,
+        "over_1m": 0.02
+      },
+      "api_per_request": {
+        "GetMetricData": 0.01,
+        "GetInsightRuleReport": 0.01,
+        "GetMetricWidgetImage": 0.02,
+        "GetMetricStatistics": 0.01,
+        "ListMetrics": 0.01,
+        "PutMetricData": 0.01,
+        "GetDashboard": 0.01,
+        "ListDashboards": 0.01,
+        "PutDashboard": 0.01,
+        "DeleteDashboards": 0.01
+      },
+      "streams": {
+        "per_1000_metric_udpates": 0.003
+      }
+    },
+    "xray": {
+      "traces_recorded": 5.0,
+      "traces_received": 0.5,
+      "traces_scanned": 0.5,
+      "insights_per_traces": 1.0
+    },
+    "dashboards": {
+      "per_dashboard_per_month": 3.0
+    },
+    "alarms": {
+      "standard_alarm_metric": 0.1,
+      "standard_alarm_insights": 0.1,
+      "high_res_alarm_metric": 0.3,
+      "aggregated_alarm_metric": 0.5
+    },
+    "contributor_insights": {
+      "cwlogs": {
+        "insights_rule": 0.5,
+        "matched_log_events": 0.022
+      },
+      "dynamodb": {
+        "insights_rule": 0.5,
+        "dynamodb_events": 0.032
+      },
+      "privatelink": {
+        "insights_rule": 9.0
+      }
+    }
+  },
+  "eu-south-1": {
+    "logs": {
+      "standard_ingestion": 0.6,
+      "infrequent_ingestion": 0.3,
+      "storage": 0.032,
+      "analyze_log_insights_per_gb_scanned": 0.006,
+      "detect_and_mask_per_gb_scanned": 0.12,
+      "analyze_live_tail_per_min": 0.01,
+      "vended_logs": {
+        "to_cloudwatch_logs_standard": {
+          "first_10tb": 0.6,
+          "next_20tb": 0.3,
+          "next_20tb_plus": 0.12,
+          "over_50tb": 0.06,
+          "data_stored": 0.032
+        },
+        "to_cloudwatch_logs_infrequent": {
+          "first_10tb": 0.3,
+          "next_20tb": 0.18,
+          "next_20tb_plus": 0.09,
+          "over_50tb": 0.06,
+          "data_stored": 0.032
+        },
+        "to_s3": {
+          "first_10tb": 0.3,
+          "next_20tb": 0.18,
+          "next_20tb_plus": 0.09,
+          "over_50tb": 0.06,
+          "convert_to_parquet_per_gb": 0.055
+        },
+        "to_kinesis": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05
+        }
+      }
+    },
+    "metrics": {
+      "metrics": {
+        "first_10k": 0.3,
+        "next_240k": 0.1,
+        "next_750k": 0.05,
+        "over_1m": 0.02
+      },
+      "api_per_request": {
+        "GetMetricData": 0.01,
+        "GetInsightRuleReport": 0.01,
+        "GetMetricWidgetImage": 0.02,
+        "GetMetricStatistics": 0.01,
+        "ListMetrics": 0.01,
+        "PutMetricData": 0.01,
+        "GetDashboard": 0.01,
+        "ListDashboards": 0.01,
+        "PutDashboard": 0.01,
+        "DeleteDashboards": 0.01
+      },
+      "streams": {
+        "per_1000_metric_udpates": 0.003
+      }
+    },
+    "xray": {
+      "traces_recorded": 5.0,
+      "traces_received": 0.5,
+      "traces_scanned": 0.5,
+      "insights_per_traces": 1.0
+    },
+    "dashboards": {
+      "per_dashboard_per_month": 3.0
+    },
+    "alarms": {
+      "standard_alarm_metric": 0.1,
+      "standard_alarm_insights": 0.1,
+      "high_res_alarm_metric": 0.3,
+      "aggregated_alarm_metric": 0.5
+    },
+    "contributor_insights": {
+      "cwlogs": {
+        "insights_rule": 0.5,
+        "matched_log_events": 0.024
+      },
+      "dynamodb": {
+        "insights_rule": 0.5,
+        "dynamodb_events": 0.036
+      },
+      "privatelink": {
+        "insights_rule": 9.0
+      }
+    }
+  },
+  "eu-south-2": {
+    "logs": {
+      "standard_ingestion": 0.57,
+      "infrequent_ingestion": 0.285,
+      "storage": 0.03,
+      "analyze_log_insights_per_gb_scanned": 0.0057,
+      "detect_and_mask_per_gb_scanned": 0.12,
+      "analyze_live_tail_per_min": 0.01,
+      "vended_logs": {
+        "to_cloudwatch_logs_standard": {
+          "first_10tb": 0.57,
+          "next_20tb": 0.285,
+          "next_20tb_plus": 0.114,
+          "over_50tb": 0.057,
+          "data_stored": 0.03
+        },
+        "to_cloudwatch_logs_infrequent": {
+          "first_10tb": 0.285,
+          "next_20tb": 0.171,
+          "next_20tb_plus": 0.086,
+          "over_50tb": 0.057,
+          "data_stored": 0.03
+        },
+        "to_s3": {
+          "first_10tb": 0.285,
+          "next_20tb": 0.171,
+          "next_20tb_plus": 0.086,
+          "over_50tb": 0.057,
+          "convert_to_parquet_per_gb": 0.034
+        },
+        "to_kinesis": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05
+        }
+      }
+    },
+    "metrics": {
+      "metrics": {
+        "first_10k": 0.3,
+        "next_240k": 0.1,
+        "next_750k": 0.05,
+        "over_1m": 0.02
+      },
+      "api_per_request": {
+        "GetMetricData": 0.01,
+        "GetInsightRuleReport": 0.01,
+        "GetMetricWidgetImage": 0.02,
+        "GetMetricStatistics": 0.01,
+        "ListMetrics": 0.01,
+        "PutMetricData": 0.01,
+        "GetDashboard": 0.01,
+        "ListDashboards": 0.01,
+        "PutDashboard": 0.01,
+        "DeleteDashboards": 0.01
+      },
+      "streams": {
+        "per_1000_metric_udpates": 0.003
+      }
+    },
+    "xray": {
+      "traces_recorded": 5.0,
+      "traces_received": 0.5,
+      "traces_scanned": 0.5,
+      "insights_per_traces": 1.0
+    },
+    "dashboards": {
+      "per_dashboard_per_month": 3.0
+    },
+    "alarms": {
+      "standard_alarm_metric": 0.1,
+      "standard_alarm_insights": 0.1,
+      "high_res_alarm_metric": 0.3,
+      "aggregated_alarm_metric": 0.5
+    },
+    "contributor_insights": {
+      "cwlogs": {
+        "insights_rule": 0.5,
+        "matched_log_events": 0.023
+      },
+      "dynamodb": {
+        "insights_rule": 0.5,
+        "dynamodb_events": 0.034
+      },
+      "privatelink": {
+        "insights_rule": 9.0
+      }
+    }
+  },
+  "eu-west-1": {
+    "logs": {
+      "standard_ingestion": 0.57,
+      "infrequent_ingestion": 0.285,
+      "storage": 0.03,
+      "analyze_log_insights_per_gb_scanned": 0.0057,
+      "detect_and_mask_per_gb_scanned": 0.12,
+      "analyze_live_tail_per_min": 0.01,
+      "vended_logs": {
+        "to_cloudwatch_logs_standard": {
+          "first_10tb": 0.57,
+          "next_20tb": 0.285,
+          "next_20tb_plus": 0.114,
+          "over_50tb": 0.057,
+          "data_stored": 0.03
+        },
+        "to_cloudwatch_logs_infrequent": {
+          "first_10tb": 0.285,
+          "next_20tb": 0.171,
+          "next_20tb_plus": 0.086,
+          "over_50tb": 0.057,
+          "data_stored": 0.03
+        },
+        "to_s3": {
+          "first_10tb": 0.285,
+          "next_20tb": 0.171,
+          "next_20tb_plus": 0.086,
+          "over_50tb": 0.057,
+          "convert_to_parquet_per_gb": 0.034
+        },
+        "to_kinesis": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05
+        }
+      }
+    },
+    "metrics": {
+      "metrics": {
+        "first_10k": 0.3,
+        "next_240k": 0.1,
+        "next_750k": 0.05,
+        "over_1m": 0.02
+      },
+      "api_per_request": {
+        "GetMetricData": 0.01,
+        "GetInsightRuleReport": 0.01,
+        "GetMetricWidgetImage": 0.02,
+        "GetMetricStatistics": 0.01,
+        "ListMetrics": 0.01,
+        "PutMetricData": 0.01,
+        "GetDashboard": 0.01,
+        "ListDashboards": 0.01,
+        "PutDashboard": 0.01,
+        "DeleteDashboards": 0.01
+      },
+      "streams": {
+        "per_1000_metric_udpates": 0.003
+      }
+    },
+    "xray": {
+      "traces_recorded": 5.0,
+      "traces_received": 0.5,
+      "traces_scanned": 0.5,
+      "insights_per_traces": 1.0
+    },
+    "dashboards": {
+      "per_dashboard_per_month": 3.0
+    },
+    "alarms": {
+      "standard_alarm_metric": 0.1,
+      "standard_alarm_insights": 0.1,
+      "high_res_alarm_metric": 0.3,
+      "aggregated_alarm_metric": 0.5
+    },
+    "contributor_insights": {
+      "cwlogs": {
+        "insights_rule": 0.5,
+        "matched_log_events": 0.023
+      },
+      "dynamodb": {
+        "insights_rule": 0.5,
+        "dynamodb_events": 0.034
+      },
+      "privatelink": {
+        "insights_rule": 9.0
+      }
+    }
+  },
+  "eu-west-2": {
+    "logs": {
+      "standard_ingestion": 0.5985,
+      "infrequent_ingestion": 0.299,
+      "storage": 0.0315,
+      "analyze_log_insights_per_gb_scanned": 0.0059,
+      "detect_and_mask_per_gb_scanned": 0.12,
+      "analyze_live_tail_per_min": 0.01,
+      "vended_logs": {
+        "to_cloudwatch_logs_standard": {
+          "first_10tb": 0.5985,
+          "next_20tb": 0.2993,
+          "next_20tb_plus": 0.1197,
+          "over_50tb": 0.0599,
+          "data_stored": 0.0315
+        },
+        "to_cloudwatch_logs_infrequent": {
+          "first_10tb": 0.299,
+          "next_20tb": 0.18,
+          "next_20tb_plus": 0.09,
+          "over_50tb": 0.06,
+          "data_stored": 0.0315
+        },
+        "to_s3": {
+          "first_10tb": 0.299,
+          "next_20tb": 0.18,
+          "next_20tb_plus": 0.09,
+          "over_50tb": 0.06,
+          "convert_to_parquet_per_gb": 0.05
+        },
+        "to_kinesis": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05
+        }
+      }
+    },
+    "metrics": {
+      "metrics": {
+        "first_10k": 0.3,
+        "next_240k": 0.1,
+        "next_750k": 0.05,
+        "over_1m": 0.02
+      },
+      "api_per_request": {
+        "GetMetricData": 0.01,
+        "GetInsightRuleReport": 0.01,
+        "GetMetricWidgetImage": 0.02,
+        "GetMetricStatistics": 0.01,
+        "ListMetrics": 0.01,
+        "PutMetricData": 0.01,
+        "GetDashboard": 0.01,
+        "ListDashboards": 0.01,
+        "PutDashboard": 0.01,
+        "DeleteDashboards": 0.01
+      },
+      "streams": {
+        "per_1000_metric_udpates": 0.003
+      }
+    },
+    "xray": {
+      "traces_recorded": 5.0,
+      "traces_received": 0.5,
+      "traces_scanned": 0.5,
+      "insights_per_traces": 1.0
+    },
+    "dashboards": {
+      "per_dashboard_per_month": 3.0
+    },
+    "alarms": {
+      "standard_alarm_metric": 0.1,
+      "standard_alarm_insights": 0.1,
+      "high_res_alarm_metric": 0.3,
+      "aggregated_alarm_metric": 0.5
+    },
+    "contributor_insights": {
+      "cwlogs": {
+        "insights_rule": 0.5,
+        "matched_log_events": 0.024
+      },
+      "dynamodb": {
+        "insights_rule": 0.5,
+        "dynamodb_events": 0.036
+      },
+      "privatelink": {
+        "insights_rule": 9.0
+      }
+    }
+  },
+  "eu-west-3": {
+    "logs": {
+      "standard_ingestion": 0.5985,
+      "infrequent_ingestion": 0.299,
+      "storage": 0.0315,
+      "analyze_log_insights_per_gb_scanned": 0.0059,
+      "detect_and_mask_per_gb_scanned": 0.12,
+      "analyze_live_tail_per_min": 0.01,
+      "vended_logs": {
+        "to_cloudwatch_logs_standard": {
+          "first_10tb": 0.5985,
+          "next_20tb": 0.2993,
+          "next_20tb_plus": 0.1197,
+          "over_50tb": 0.0599,
+          "data_stored": 0.0315
+        },
+        "to_cloudwatch_logs_infrequent": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05,
+          "data_stored": 0.0315
+        },
+        "to_s3": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05,
+          "convert_to_parquet_per_gb": 0.048
+        },
+        "to_kinesis": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05
+        }
+      }
+    },
+    "metrics": {
+      "metrics": {
+        "first_10k": 0.3,
+        "next_240k": 0.1,
+        "next_750k": 0.05,
+        "over_1m": 0.02
+      },
+      "api_per_request": {
+        "GetMetricData": 0.01,
+        "GetInsightRuleReport": 0.01,
+        "GetMetricWidgetImage": 0.02,
+        "GetMetricStatistics": 0.01,
+        "ListMetrics": 0.01,
+        "PutMetricData": 0.01,
+        "GetDashboard": 0.01,
+        "ListDashboards": 0.01,
+        "PutDashboard": 0.01,
+        "DeleteDashboards": 0.01
+      },
+      "streams": {
+        "per_1000_metric_udpates": 0.003
+      }
+    },
+    "xray": {
+      "traces_recorded": 5.0,
+      "traces_received": 0.0,
+      "traces_scanned": 0.0,
+      "insights_per_traces": 1.0
+    },
+    "dashboards": {
+      "per_dashboard_per_month": 3.0
+    },
+    "alarms": {
+      "standard_alarm_metric": 0.1,
+      "standard_alarm_insights": 0.1,
+      "high_res_alarm_metric": 0.3,
+      "aggregated_alarm_metric": 0.5
+    },
+    "contributor_insights": {
+      "cwlogs": {
+        "insights_rule": 0.5,
+        "matched_log_events": 0.024
+      },
+      "dynamodb": {
+        "insights_rule": 0.5,
+        "dynamodb_events": 0.036
+      },
+      "privatelink": {
+        "insights_rule": 9.0
+      }
+    }
+  },
+  "il-central-1": {
+    "logs": {
+      "standard_ingestion": 0.5,
+      "infrequent_ingestion": 0.25,
+      "storage": 0.03,
+      "analyze_log_insights_per_gb_scanned": 0.005,
+      "detect_and_mask_per_gb_scanned": 0.12,
+      "analyze_live_tail_per_min": 0.01,
+      "vended_logs": {
+        "to_cloudwatch_logs_standard": {
+          "first_10tb": 0.5,
+          "next_20tb": 0.25,
+          "next_20tb_plus": 0.1,
+          "over_50tb": 0.05,
+          "data_stored": 0.03
+        },
+        "to_cloudwatch_logs_infrequent": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05,
+          "data_stored": 0.03
+        },
+        "to_s3": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05,
+          "convert_to_parquet_per_gb": 0.03
+        },
+        "to_kinesis": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05
+        }
+      }
+    },
+    "metrics": {
+      "metrics": {
+        "first_10k": 0.3,
+        "next_240k": 0.1,
+        "next_750k": 0.05,
+        "over_1m": 0.02
+      },
+      "api_per_request": {
+        "GetMetricData": 0.01,
+        "GetInsightRuleReport": 0.01,
+        "GetMetricWidgetImage": 0.02,
+        "GetMetricStatistics": 0.01,
+        "ListMetrics": 0.01,
+        "PutMetricData": 0.01,
+        "GetDashboard": 0.01,
+        "ListDashboards": 0.01,
+        "PutDashboard": 0.01,
+        "DeleteDashboards": 0.01
+      },
+      "streams": {
+        "per_1000_metric_udpates": 0.003
+      }
+    },
+    "xray": {
+      "traces_recorded": 5.0,
+      "traces_received": 0.5,
+      "traces_scanned": 0.5,
+      "insights_per_traces": 1.0
+    },
+    "dashboards": {
+      "per_dashboard_per_month": 3.0
+    },
+    "alarms": {
+      "standard_alarm_metric": 0.1,
+      "standard_alarm_insights": 0.1,
+      "high_res_alarm_metric": 0.3,
+      "aggregated_alarm_metric": 0.5
+    },
+    "contributor_insights": {
+      "cwlogs": {
+        "insights_rule": 0.5,
+        "matched_log_events": 0.02
+      },
+      "dynamodb": {
+        "insights_rule": 0.5,
+        "dynamodb_events": 0.03
+      },
+      "privatelink": {
+        "insights_rule": 9.0
+      }
+    }
+  },
+  "me-central-1": {
+    "logs": {
+      "standard_ingestion": 0.63,
+      "infrequent_ingestion": 0.315,
+      "storage": 0.033,
+      "analyze_log_insights_per_gb_scanned": 0.0063,
+      "detect_and_mask_per_gb_scanned": 0.12,
+      "analyze_live_tail_per_min": 0.01,
+      "vended_logs": {
+        "to_cloudwatch_logs_standard": {
+          "first_10tb": 0.63,
+          "next_20tb": 0.314,
+          "next_20tb_plus": 0.125,
+          "over_50tb": 0.063,
+          "data_stored": 0.033
+        },
+        "to_cloudwatch_logs_infrequent": {
+          "first_10tb": 0.314,
+          "next_20tb": 0.188,
+          "next_20tb_plus": 0.095,
+          "over_50tb": 0.063,
+          "data_stored": 0.033
+        },
+        "to_s3": {
+          "first_10tb": 0.314,
+          "next_20tb": 0.188,
+          "next_20tb_plus": 0.095,
+          "over_50tb": 0.063,
+          "convert_to_parquet_per_gb": 0.038
+        },
+        "to_kinesis": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05
+        }
+      }
+    },
+    "metrics": {
+      "metrics": {
+        "first_10k": 0.3,
+        "next_240k": 0.1,
+        "next_750k": 0.05,
+        "over_1m": 0.02
+      },
+      "api_per_request": {
+        "GetMetricData": 0.01,
+        "GetInsightRuleReport": 0.01,
+        "GetMetricWidgetImage": 0.02,
+        "GetMetricStatistics": 0.01,
+        "ListMetrics": 0.01,
+        "PutMetricData": 0.01,
+        "GetDashboard": 0.01,
+        "ListDashboards": 0.01,
+        "PutDashboard": 0.01,
+        "DeleteDashboards": 0.01
+      },
+      "streams": {
+        "per_1000_metric_udpates": 0.003
+      }
+    },
+    "xray": {
+      "traces_recorded": 5.0,
+      "traces_received": 0.5,
+      "traces_scanned": 0.5,
+      "insights_per_traces": 1.0
+    },
+    "dashboards": {
+      "per_dashboard_per_month": 3.0
+    },
+    "alarms": {
+      "standard_alarm_metric": 0.1,
+      "standard_alarm_insights": 0.1,
+      "high_res_alarm_metric": 0.3,
+      "aggregated_alarm_metric": 0.5
+    },
+    "contributor_insights": {
+      "cwlogs": {
+        "insights_rule": 0.5,
+        "matched_log_events": 0.025
+      },
+      "dynamodb": {
+        "insights_rule": 0.5,
+        "dynamodb_events": 0.037
+      },
+      "privatelink": {
+        "insights_rule": 9.0
+      }
+    }
+  },
+  "me-south-1": {
+    "logs": {
+      "standard_ingestion": 0.63,
+      "infrequent_ingestion": 0.315,
+      "storage": 0.03,
+      "analyze_log_insights_per_gb_scanned": 0.0063,
+      "detect_and_mask_per_gb_scanned": 0.12,
+      "analyze_live_tail_per_min": 0.01,
+      "vended_logs": {
+        "to_cloudwatch_logs_standard": {
+          "first_10tb": 0.63,
+          "next_20tb": 0.314,
+          "next_20tb_plus": 0.125,
+          "over_50tb": 0.063,
+          "data_stored": 0.03
+        },
+        "to_cloudwatch_logs_infrequent": {
+          "first_10tb": 0.314,
+          "next_20tb": 0.188,
+          "next_20tb_plus": 0.095,
+          "over_50tb": 0.063,
+          "data_stored": 0.03
+        },
+        "to_s3": {
+          "first_10tb": 0.314,
+          "next_20tb": 0.188,
+          "next_20tb_plus": 0.095,
+          "over_50tb": 0.063,
+          "convert_to_parquet_per_gb": 0.042
+        },
+        "to_kinesis": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05
+        }
+      }
+    },
+    "metrics": {
+      "metrics": {
+        "first_10k": 0.3,
+        "next_240k": 0.1,
+        "next_750k": 0.05,
+        "over_1m": 0.02
+      },
+      "api_per_request": {
+        "GetMetricData": 0.01,
+        "GetInsightRuleReport": 0.01,
+        "GetMetricWidgetImage": 0.02,
+        "GetMetricStatistics": 0.01,
+        "ListMetrics": 0.01,
+        "PutMetricData": 0.01,
+        "GetDashboard": 0.01,
+        "ListDashboards": 0.01,
+        "PutDashboard": 0.01,
+        "DeleteDashboards": 0.01
+      },
+      "streams": {
+        "per_1000_metric_udpates": 0.003
+      }
+    },
+    "xray": {
+      "traces_recorded": 5.0,
+      "traces_received": 0.5,
+      "traces_scanned": 0.5,
+      "insights_per_traces": 1.0
+    },
+    "dashboards": {
+      "per_dashboard_per_month": 3.0
+    },
+    "alarms": {
+      "standard_alarm_metric": 0.1,
+      "standard_alarm_insights": 0.1,
+      "high_res_alarm_metric": 0.3,
+      "aggregated_alarm_metric": 0.5
+    },
+    "contributor_insights": {
+      "cwlogs": {
+        "insights_rule": 0.5,
+        "matched_log_events": 0.025
+      },
+      "dynamodb": {
+        "insights_rule": 0.5,
+        "dynamodb_events": 0.037
+      },
+      "privatelink": {
+        "insights_rule": 9.0
+      }
+    }
+  },
+  "mx-central-1": {
+    "logs": {
+      "standard_ingestion": 0.5,
+      "infrequent_ingestion": 0.25,
+      "storage": 0.03,
+      "analyze_log_insights_per_gb_scanned": 0.005,
+      "detect_and_mask_per_gb_scanned": 0.0,
+      "analyze_live_tail_per_min": 0.01,
+      "vended_logs": {
+        "to_cloudwatch_logs_standard": {
+          "first_10tb": 0.5,
+          "next_20tb": 0.25,
+          "next_20tb_plus": 0.1,
+          "over_50tb": 0.05,
+          "data_stored": 0.03
+        },
+        "to_cloudwatch_logs_infrequent": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05,
+          "data_stored": 0.03
+        },
+        "to_s3": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05,
+          "convert_to_parquet_per_gb": 0.03
+        },
+        "to_kinesis": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05
+        }
+      }
+    },
+    "metrics": {
+      "metrics": {
+        "first_10k": 0.3,
+        "next_240k": 0.1,
+        "next_750k": 0.05,
+        "over_1m": 0.02
+      },
+      "api_per_request": {
+        "GetMetricData": 0.01,
+        "GetInsightRuleReport": 0.01,
+        "GetMetricWidgetImage": 0.02,
+        "GetMetricStatistics": 0.01,
+        "ListMetrics": 0.01,
+        "PutMetricData": 0.01,
+        "GetDashboard": 0.01,
+        "ListDashboards": 0.01,
+        "PutDashboard": 0.01,
+        "DeleteDashboards": 0.01
+      },
+      "streams": {
+        "per_1000_metric_udpates": 0.0
+      }
+    },
+    "xray": {
+      "traces_recorded": 5.0,
+      "traces_received": 0.5,
+      "traces_scanned": 0.5,
+      "insights_per_traces": 1.0
+    },
+    "dashboards": {
+      "per_dashboard_per_month": 3.0
+    },
+    "alarms": {
+      "standard_alarm_metric": 0.1,
+      "standard_alarm_insights": 0.1,
+      "high_res_alarm_metric": 0.3,
+      "aggregated_alarm_metric": 0.5
+    },
+    "contributor_insights": {
+      "cwlogs": {
+        "insights_rule": 0.5,
+        "matched_log_events": 0.02
+      },
+      "dynamodb": {
+        "insights_rule": 0.5,
+        "dynamodb_events": 0.03
+      },
+      "privatelink": {
+        "insights_rule": 0.0
+      }
+    }
+  },
+  "sa-east-1": {
+    "logs": {
+      "standard_ingestion": 0.9,
+      "infrequent_ingestion": 0.45,
+      "storage": 0.0408,
+      "analyze_log_insights_per_gb_scanned": 0.009,
+      "detect_and_mask_per_gb_scanned": 0.12,
+      "analyze_live_tail_per_min": 0.01,
+      "vended_logs": {
+        "to_cloudwatch_logs_standard": {
+          "first_10tb": 0.9,
+          "next_20tb": 0.45,
+          "next_20tb_plus": 0.18,
+          "over_50tb": 0.09,
+          "data_stored": 0.0408
+        },
+        "to_cloudwatch_logs_infrequent": {
+          "first_10tb": 0.45,
+          "next_20tb": 0.27,
+          "next_20tb_plus": 0.135,
+          "over_50tb": 0.09,
+          "data_stored": 0.0408
+        },
+        "to_s3": {
+          "first_10tb": 0.45,
+          "next_20tb": 0.27,
+          "next_20tb_plus": 0.135,
+          "over_50tb": 0.09,
+          "convert_to_parquet_per_gb": 0.07
+        },
+        "to_kinesis": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05
+        }
+      }
+    },
+    "metrics": {
+      "metrics": {
+        "first_10k": 0.3,
+        "next_240k": 0.1,
+        "next_750k": 0.05,
+        "over_1m": 0.02
+      },
+      "api_per_request": {
+        "GetMetricData": 0.014,
+        "GetInsightRuleReport": 0.014,
+        "GetMetricWidgetImage": 0.028,
+        "GetMetricStatistics": 0.014,
+        "ListMetrics": 0.014,
+        "PutMetricData": 0.014,
+        "GetDashboard": 0.014,
+        "ListDashboards": 0.014,
+        "PutDashboard": 0.014,
+        "DeleteDashboards": 0.014
+      },
+      "streams": {
+        "per_1000_metric_udpates": 0.0042
+      }
+    },
+    "xray": {
+      "traces_recorded": 5.0,
+      "traces_received": 0.5,
+      "traces_scanned": 0.5,
+      "insights_per_traces": 1.0
+    },
+    "dashboards": {
+      "per_dashboard_per_month": 3.0
+    },
+    "alarms": {
+      "standard_alarm_metric": 0.135,
+      "standard_alarm_insights": 0.135,
+      "high_res_alarm_metric": 0.405,
+      "aggregated_alarm_metric": 0.675
+    },
+    "contributor_insights": {
+      "cwlogs": {
+        "insights_rule": 0.5,
+        "matched_log_events": 0.036
+      },
+      "dynamodb": {
+        "insights_rule": 0.5,
+        "dynamodb_events": 0.045
+      },
+      "privatelink": {
+        "insights_rule": 9.0
+      }
+    }
+  },
+  "us-east-1": {
+    "logs": {
+      "standard_ingestion": 0.5,
+      "infrequent_ingestion": 0.25,
+      "storage": 0.03,
+      "analyze_log_insights_per_gb_scanned": 0.005,
+      "detect_and_mask_per_gb_scanned": 0.12,
+      "analyze_live_tail_per_min": 0.01,
+      "vended_logs": {
+        "to_cloudwatch_logs_standard": {
+          "first_10tb": 0.5,
+          "next_20tb": 0.25,
+          "next_20tb_plus": 0.1,
+          "over_50tb": 0.05,
+          "data_stored": 0.03
+        },
+        "to_cloudwatch_logs_infrequent": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05,
+          "data_stored": 0.03
+        },
+        "to_s3": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05,
+          "convert_to_parquet_per_gb": 0.03
+        },
+        "to_kinesis": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05
+        }
+      }
+    },
+    "metrics": {
+      "metrics": {
+        "first_10k": 0.3,
+        "next_240k": 0.1,
+        "next_750k": 0.05,
+        "over_1m": 0.02
+      },
+      "api_per_request": {
+        "GetMetricData": 0.01,
+        "GetInsightRuleReport": 0.01,
+        "GetMetricWidgetImage": 0.02,
+        "GetMetricStatistics": 0.01,
+        "ListMetrics": 0.01,
+        "PutMetricData": 0.01,
+        "GetDashboard": 0.01,
+        "ListDashboards": 0.01,
+        "PutDashboard": 0.01,
+        "DeleteDashboards": 0.01
+      },
+      "streams": {
+        "per_1000_metric_udpates": 0.003
+      }
+    },
+    "xray": {
+      "traces_recorded": 5.0,
+      "traces_received": 0.5,
+      "traces_scanned": 0.5,
+      "insights_per_traces": 1.0
+    },
+    "dashboards": {
+      "per_dashboard_per_month": 3.0
+    },
+    "alarms": {
+      "standard_alarm_metric": 0.1,
+      "standard_alarm_insights": 0.1,
+      "high_res_alarm_metric": 0.3,
+      "aggregated_alarm_metric": 0.5
+    },
+    "contributor_insights": {
+      "cwlogs": {
+        "insights_rule": 0.5,
+        "matched_log_events": 0.02
+      },
+      "dynamodb": {
+        "insights_rule": 0.5,
+        "dynamodb_events": 0.03
+      },
+      "privatelink": {
+        "insights_rule": 9.0
+      }
+    }
+  },
+  "us-east-2": {
+    "logs": {
+      "standard_ingestion": 0.5,
+      "infrequent_ingestion": 0.25,
+      "storage": 0.03,
+      "analyze_log_insights_per_gb_scanned": 0.005,
+      "detect_and_mask_per_gb_scanned": 0.12,
+      "analyze_live_tail_per_min": 0.01,
+      "vended_logs": {
+        "to_cloudwatch_logs_standard": {
+          "first_10tb": 0.5,
+          "next_20tb": 0.25,
+          "next_20tb_plus": 0.1,
+          "over_50tb": 0.05,
+          "data_stored": 0.03
+        },
+        "to_cloudwatch_logs_infrequent": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05,
+          "data_stored": 0.03
+        },
+        "to_s3": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05,
+          "convert_to_parquet_per_gb": 0.035
+        },
+        "to_kinesis": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05
+        }
+      }
+    },
+    "metrics": {
+      "metrics": {
+        "first_10k": 0.3,
+        "next_240k": 0.1,
+        "next_750k": 0.05,
+        "over_1m": 0.02
+      },
+      "api_per_request": {
+        "GetMetricData": 0.01,
+        "GetInsightRuleReport": 0.01,
+        "GetMetricWidgetImage": 0.02,
+        "GetMetricStatistics": 0.01,
+        "ListMetrics": 0.01,
+        "PutMetricData": 0.01,
+        "GetDashboard": 0.01,
+        "ListDashboards": 0.01,
+        "PutDashboard": 0.01,
+        "DeleteDashboards": 0.01
+      },
+      "streams": {
+        "per_1000_metric_udpates": 0.003
+      }
+    },
+    "xray": {
+      "traces_recorded": 5.0,
+      "traces_received": 0.5,
+      "traces_scanned": 0.5,
+      "insights_per_traces": 1.0
+    },
+    "dashboards": {
+      "per_dashboard_per_month": 3.0
+    },
+    "alarms": {
+      "standard_alarm_metric": 0.1,
+      "standard_alarm_insights": 0.1,
+      "high_res_alarm_metric": 0.3,
+      "aggregated_alarm_metric": 0.5
+    },
+    "contributor_insights": {
+      "cwlogs": {
+        "insights_rule": 0.5,
+        "matched_log_events": 0.02
+      },
+      "dynamodb": {
+        "insights_rule": 0.5,
+        "dynamodb_events": 0.03
+      },
+      "privatelink": {
+        "insights_rule": 9.0
+      }
+    }
+  },
+  "us-west-1": {
+    "logs": {
+      "standard_ingestion": 0.67,
+      "infrequent_ingestion": 0.335,
+      "storage": 0.033,
+      "analyze_log_insights_per_gb_scanned": 0.0067,
+      "detect_and_mask_per_gb_scanned": 0.12,
+      "analyze_live_tail_per_min": 0.01,
+      "vended_logs": {
+        "to_cloudwatch_logs_standard": {
+          "first_10tb": 0.67,
+          "next_20tb": 0.335,
+          "next_20tb_plus": 0.134,
+          "over_50tb": 0.067,
+          "data_stored": 0.033
+        },
+        "to_cloudwatch_logs_infrequent": {
+          "first_10tb": 0.335,
+          "next_20tb": 0.201,
+          "next_20tb_plus": 0.101,
+          "over_50tb": 0.067,
+          "data_stored": 0.033
+        },
+        "to_s3": {
+          "first_10tb": 0.335,
+          "next_20tb": 0.201,
+          "next_20tb_plus": 0.101,
+          "over_50tb": 0.067,
+          "convert_to_parquet_per_gb": 0.053
+        },
+        "to_kinesis": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05
+        }
+      }
+    },
+    "metrics": {
+      "metrics": {
+        "first_10k": 0.3,
+        "next_240k": 0.1,
+        "next_750k": 0.05,
+        "over_1m": 0.02
+      },
+      "api_per_request": {
+        "GetMetricData": 0.01,
+        "GetInsightRuleReport": 0.01,
+        "GetMetricWidgetImage": 0.02,
+        "GetMetricStatistics": 0.01,
+        "ListMetrics": 0.01,
+        "PutMetricData": 0.01,
+        "GetDashboard": 0.01,
+        "ListDashboards": 0.01,
+        "PutDashboard": 0.01,
+        "DeleteDashboards": 0.01
+      },
+      "streams": {
+        "per_1000_metric_udpates": 0.003
+      }
+    },
+    "xray": {
+      "traces_recorded": 5.0,
+      "traces_received": 0.5,
+      "traces_scanned": 0.5,
+      "insights_per_traces": 1.0
+    },
+    "dashboards": {
+      "per_dashboard_per_month": 3.0
+    },
+    "alarms": {
+      "standard_alarm_metric": 0.1,
+      "standard_alarm_insights": 0.1,
+      "high_res_alarm_metric": 0.3,
+      "aggregated_alarm_metric": 0.5
+    },
+    "contributor_insights": {
+      "cwlogs": {
+        "insights_rule": 0.5,
+        "matched_log_events": 0.027
+      },
+      "dynamodb": {
+        "insights_rule": 0.5,
+        "dynamodb_events": 0.033
+      },
+      "privatelink": {
+        "insights_rule": 9.0
+      }
+    }
+  },
+  "us-west-2": {
+    "logs": {
+      "standard_ingestion": 0.5,
+      "infrequent_ingestion": 0.25,
+      "storage": 0.03,
+      "analyze_log_insights_per_gb_scanned": 0.005,
+      "detect_and_mask_per_gb_scanned": 0.12,
+      "analyze_live_tail_per_min": 0.01,
+      "vended_logs": {
+        "to_cloudwatch_logs_standard": {
+          "first_10tb": 0.5,
+          "next_20tb": 0.25,
+          "next_20tb_plus": 0.1,
+          "over_50tb": 0.05,
+          "data_stored": 0.03
+        },
+        "to_cloudwatch_logs_infrequent": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05,
+          "data_stored": 0.03
+        },
+        "to_s3": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05,
+          "convert_to_parquet_per_gb": 0.03
+        },
+        "to_kinesis": {
+          "first_10tb": 0.25,
+          "next_20tb": 0.15,
+          "next_20tb_plus": 0.075,
+          "over_50tb": 0.05
+        }
+      }
+    },
+    "metrics": {
+      "metrics": {
+        "first_10k": 0.3,
+        "next_240k": 0.1,
+        "next_750k": 0.05,
+        "over_1m": 0.02
+      },
+      "api_per_request": {
+        "GetMetricData": 0.01,
+        "GetInsightRuleReport": 0.01,
+        "GetMetricWidgetImage": 0.02,
+        "GetMetricStatistics": 0.01,
+        "ListMetrics": 0.01,
+        "PutMetricData": 0.01,
+        "GetDashboard": 0.01,
+        "ListDashboards": 0.01,
+        "PutDashboard": 0.01,
+        "DeleteDashboards": 0.01
+      },
+      "streams": {
+        "per_1000_metric_udpates": 0.003
+      }
+    },
+    "xray": {
+      "traces_recorded": 5.0,
+      "traces_received": 0.5,
+      "traces_scanned": 0.5,
+      "insights_per_traces": 1.0
+    },
+    "dashboards": {
+      "per_dashboard_per_month": 3.0
+    },
+    "alarms": {
+      "standard_alarm_metric": 0.1,
+      "standard_alarm_insights": 0.1,
+      "high_res_alarm_metric": 0.3,
+      "aggregated_alarm_metric": 0.5
+    },
+    "contributor_insights": {
+      "cwlogs": {
+        "insights_rule": 0.5,
+        "matched_log_events": 0.02
+      },
+      "dynamodb": {
+        "insights_rule": 0.5,
+        "dynamodb_events": 0.03
+      },
+      "privatelink": {
+        "insights_rule": 9.0
+      }
+    }
+  }
+}
