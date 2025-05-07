@@ -2,6 +2,10 @@
 
 A tool to calculate potential savings from AWS Lambda's new CloudWatch Logs tiered pricing structure (effective May 1, 2025).
 
+Referenced in this blog post: 
+[Lambda Logs Just Got a Whole Lot Cheaper*](https://www.duckbillgroup.com/blog/lambda-logs-just-got-cheaper/)
+
+
 ## Features
 
 - Fetches CloudWatch Logs usage data from your AWS account
@@ -40,6 +44,12 @@ The `cloudwatch_pricing.json` file contains the pricing data used for calculatio
 Run the script with:
 ```bash
 python cloudwatch_logs_cost_estimator.py
+```
+
+By default, the script will use the region configured in your AWS credentials. To analyze a different region, use the `--region` argument:
+
+```bash
+python cloudwatch_logs_cost_estimator.py --region us-west-2
 ```
 
 The script will:

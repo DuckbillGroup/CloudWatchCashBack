@@ -19,6 +19,7 @@
 import boto3
 import logging
 import json
+import argparse
 from datetime import datetime, timedelta
 from pathlib import Path
 
@@ -140,7 +141,7 @@ def calculate_new_cloudwatch_cost(daily_gb_ingested, region='us-east-1', is_ia=F
         "total_daily_cost": total_daily_cost
     }
 
-def get_lambda_log_usage_for_month():
+def get_lambda_log_usage_for_month(region='us-east-1'):
     """
     Get the CloudWatch Logs usage for Lambda functions for the past month.
     
@@ -150,11 +151,11 @@ def get_lambda_log_usage_for_month():
     logger.info("Starting to fetch Lambda log usage data for the past month")
     
     # Initialize CloudWatch Logs client
-    logs_client = boto3.client('logs')
-    cloudwatch_client = boto3.client('cloudwatch')
+    logs_client = boto3.client('logs', region_name=region)
+    cloudwatch_client = boto3.client('cloudwatch', region_name=region)
     
     # Get the current region
-    region = logs_client.meta.region_name
+    #region = logs_client.meta.region_name
     logger.info(f"Using region: {region}")
     
     # Get all log groups
@@ -343,17 +344,28 @@ def main():
     """
     Main function to run the cost analysis.
     """
+    # Set up argument parser
+    parser = argparse.ArgumentParser(description='Analyze CloudWatch Logs costs and compare old vs new pricing models.')
+    parser.add_argument('--region', help='AWS region to use for analysis (overrides default region)')
+    args = parser.parse_args()
+
     logger.info("Starting CloudWatch Logs cost analysis")
    
-    # Get the region from the CloudWatch client
-    region = boto3.client('logs').meta.region_name
+    # Get the region from command line argument or default to the current region
+    if args.region:
+        region = args.region
+        logger.info(f"Using specified region: {region}")
+    else:
+        region = boto3.client('logs').meta.region_name
+        logger.info(f"Using default region: {region}")
+
     account_id = boto3.client('sts').get_caller_identity().get('Account')
     account_name = boto3.client('sts').get_caller_identity().get('Account')
 
     logger.info(f"Account ID: {account_id}")
 
     # Get usage data
-    daily_usage = get_lambda_log_usage_for_month()
+    daily_usage = get_lambda_log_usage_for_month(region)
 
     # Analyze costs
     analysis = analyze_costs(daily_usage, region)
@@ -367,7 +379,7 @@ def main():
     
     # Write report to file with current date
     current_date = datetime.now().strftime('%Y%m%d')
-    report_filename = reports_dir / f"{current_date}_CWLogsReport_{account_id}.md"
+    report_filename = reports_dir / f"{current_date}_CWLogsReport_{account_id}_{region}.md"
     
     try:
         with open(report_filename, 'w') as f:
