@@ -21,6 +21,16 @@ import logging
 import json
 from datetime import datetime, timedelta
 from pathlib import Path
+import sys
+
+def get_region():
+    region_cli = ""
+    for i, arg in enumerate(sys.argv):
+        if arg == '--region' and i + 1 < len(sys.argv):
+            region_cli = sys.argv[i + 1]
+            break
+    return region_cli
+
 
 # Configure logging
 logging.basicConfig(
@@ -29,6 +39,9 @@ logging.basicConfig(
     datefmt='%Y-%m-%d %H:%M:%S'
 )
 logger = logging.getLogger(__name__)
+
+# Get region from CLI
+region_cli = get_region()
 
 def load_pricing_data():
     """
@@ -154,7 +167,10 @@ def get_lambda_log_usage_for_month():
     cloudwatch_client = boto3.client('cloudwatch')
     
     # Get the current region
-    region = logs_client.meta.region_name
+    if region_cli != "":
+     region = region_cli
+    else:
+     region = logs_client.meta.region_name
     logger.info(f"Using region: {region}")
     
     # Get all log groups
@@ -343,10 +359,15 @@ def main():
     """
     Main function to run the cost analysis.
     """
+
     logger.info("Starting CloudWatch Logs cost analysis")
    
     # Get the region from the CloudWatch client
-    region = boto3.client('logs').meta.region_name
+# Check if region_cli exists and has a value, then set region
+    if region_cli != "":
+     region = region_cli
+    else:
+     region = boto3.client('logs').meta.region_name
     account_id = boto3.client('sts').get_caller_identity().get('Account')
     account_name = boto3.client('sts').get_caller_identity().get('Account')
 
